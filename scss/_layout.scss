@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  max-width: $colspan12;
+  margin: 0 auto;
+  padding: 0;
+}
+
+[role="banner"] {
+  position: relative;
+
+  @media ( min-width: $colspan12 ) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $colspan03;
+    margin: 0 $gap;
+  }
+}
+
+[role="main"] {
+  margin: 0 1em;
+
+  @media ( min-width: $colspan09 ) {
+    max-width: $colspan08;
+    margin: 0 auto;
+  }
+
+  @media ( min-width: $colspan12 ) {
+    float: left;
+    width: $colspan08;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 $gap;
+  }
+}
+
+[role="contentinfo"] {
+  margin: ( $margin * 3 ) 1em $margin;
+  text-align: center;
+
+  @media ( min-width: $colspan12 ) {
+    clear: both;
+    text-align: left;
+  }
+}
+
